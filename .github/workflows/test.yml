@@ -13,3 +13,4 @@ jobs:
     steps:
       - run: "Hello World"
       - run: "Testing actions"
+      - run: echo ${{ toJson(github) }}
