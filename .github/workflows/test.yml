@@ -13,4 +13,8 @@ jobs:
     steps:
       - run:  echo "Hello World"
       - run: echo "Testing actions"
-      - run: echo ${{ toJson(github) }}
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: |
+          echo "$GITHUB_CONTEXT"
