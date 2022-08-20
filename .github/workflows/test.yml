@@ -8,7 +8,13 @@ on:
 
 jobs:
   RunLabel:
-    if: ${{ github.event.pull_request.label.name == 'benchmarks' }}
+    # if: ${{ github.event.pull_request.label.name == 'benchmark' }}
     runs-on: ubuntu-latest
     steps:
-      - run: "Hello World"
+      - run:  echo "Hello World"
+      - run: echo "Testing actions"
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: |
+          echo "$GITHUB_CONTEXT"
