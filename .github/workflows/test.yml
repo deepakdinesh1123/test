@@ -8,7 +8,7 @@ on:
 
 jobs:
   RunLabel:
-    if: ${{ github.event.label.name == 'benchmark' }}
+    if: ${{ github.event.labels.name == 'benchmark' }}
     runs-on: ubuntu-latest
     steps:
       - run:  echo "Hello World"
