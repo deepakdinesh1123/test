@@ -1,4 +1,4 @@
-{
+
     "token": "***",
     "job": "RunLabel",
     "ref": "refs/pull/4/merge",
@@ -533,7 +533,6 @@
     "path": "/home/runner/work/_temp/_runner_file_commands/add_path_5cd588d4-eb56-4284-bf76-4c843fd2703d",
     "env": "/home/runner/work/_temp/_runner_file_commands/set_env_5cd588d4-eb56-4284-bf76-4c843fd2703d",
     "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_5cd588d4-eb56-4284-bf76-4c843fd2703d"
-}
 {
     "token": "***",
     "job": "RunLabel",
