@@ -2,11 +2,11 @@ name: Test
 
 on:
   pull_request:
-    types: [ labeled, synchronize]
+    types: [ labeled, synchronize, reopened, opened]
 
 jobs:
   RunLabel:
-    if: ${{ github.event.label.name == 'benchmark' }}
+    if: contains(github.event.pull_request.labels.*.name, 'benchmark')
     runs-on: ubuntu-latest
     steps:
-      - run:  echo "Hello World"
+      - run: echo "Dude"
