@@ -6,7 +6,7 @@ on:
 
 jobs:
   RunLabel:
-    if: ${{ github.event.pull_request.labels.name == 'benchmark' }}
+    if: ${{ github.event.pull_request.labels.name == 'benchmark' || github.event.label.name == 'benchmark' }}
     runs-on: ubuntu-latest
     steps:
       - run:  echo "Hello World"
