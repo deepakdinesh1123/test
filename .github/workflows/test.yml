@@ -12,9 +12,3 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run:  echo "Hello World"
-      - run: echo "Testing actions"
-      - name: Dump GitHub context
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: |
-          echo "$GITHUB_CONTEXT"
